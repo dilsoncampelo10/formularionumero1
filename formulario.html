@@ -8,51 +8,55 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <section>
-        <h1>Formulário</h1>
-        <p>Preencha as informações abaixo</p>
-    </section id="form">
-        <form>
-            
-            <fieldset>
-                <legend>Dados Pessoais</legend>
+    <main>
+        <header>
+            <h1>Formulário</h1>
+            <p>Preencha as informações abaixo</p>
+        </header>
+            <form>
+        
+                <fieldset>
+                    <legend>Dados Pessoais</legend>
+                    <div>
+                        <label>Nome </label>
+                        <input type="text" name="nome" placeholder="Nome">
+                        <label>Sobrenome</label>
+                        <input type="text" name="sobrenome" placeholder="Sobrenome">
+                    </div>
+                    <div>
+                        <label>E-mail</label>
+                        <input type="email" name="email" id="email" placeholder="E-mail">
+                        <label>Senha</label>
+                        <input type="password" name="senha" id="senha" placeholder="Senha">
+                    </div>
+                    <div>
+                        <label>Sexo</label>
+                        <input type="radio" name="sexo" id="masc">
+                        <label for="masc">Masculino</label>
+                        <input type="radio" name="sexo" id="femi">
+                        <label for="femi">Feminino</label>
+                    </div>
+                    <div>
+                        <label>Curso técnico</label>
+                        <select name="curso" id="curso">
+                            <option>Informática</option>
+                            <option>Agroecologia</option>
+                            <option>Meio ambiente</option>
+                        </select>
+                    </div>
+                    <div>
+                        <input type="submit" value="Enviar" class="clicar">
+                        <input type="reset" value="Limpar" class="clicar">
+                    </div>
+                </fieldset>
                 <div>
-                    <label>Nome </label>
-                    <input type="text" name="nome" placeholder="Nome">
-                    <label>Sobrenome</label>
-                    <input type="text" name="sobrenome" placeholder="Sobrenome">
+                    <label>Deixe um comentário</label><br>
+                    <textarea name="comentario" id="coment" cols="67" rows="5"></textarea>
                 </div>
-                <div>
-                    <label>E-mail</label>
-                    <input type="email" name="email" id="email" placeholder="E-mail">
-                    <label>Senha</label>
-                    <input type="password" name="senha" id="senha" placeholder="Senha">
-                </div>
-                <div>
-                    <label>Sexo</label>
-                    <input type="radio" name="sexo" id="masc">
-                    <label for="masc">Masculino</label>
-                    <input type="radio" name="sexo" id="femi">
-                    <label for="femi">Feminino</label>
-                </div>
-                <div>
-                    <label>Curso técnico</label>
-                    <select name="curso" id="curso">
-                        <option>Informática</option>
-                        <option>Agroecologia</option>
-                        <option>Meio ambiente</option>
-                    </select>
-                </div>
-                <div>
-                    <input type="submit" value="Enviar">
-                    <input type="reset" value="Limpar">
-                </div>
-            </fieldset>
-            <div>
-                <label>Deixe um comentário</label><br>
-                <textarea name="comentario" id="coment" cols="30" rows="5"></textarea>
-            </div>
-
-        </form>
+            </form>
+    </main>
+    <footer>
+        <p>&copy;<a href="https://www.linkedin.com/in/dilson10/" target="_blank">Dilson Campêlo</a></p>
+    </footer>
 </body>
 </html>
